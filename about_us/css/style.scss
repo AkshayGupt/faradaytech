@@ -1,0 +1,27 @@
+ 
+$color-primary:#45f8dd;
+$color-secondary:#008778;
+
+body
+{
+  background-image: linear-gradient(to left bottom, #72e2d2, #68d9c8, #5ecfbf, #54c6b5, #4abdac);
+
+}
+main
+{
+   
+    a, a:hover,a:visited, a:focus {
+      text-decoration:none;
+    }
+    #ab
+    {
+      color:$color-secondary;
+    }
+    .active
+    {
+      color:$color-secondary;
+    }
+  
+}
+
+

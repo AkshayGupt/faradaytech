@@ -1,0 +1,17 @@
+body {
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#72e2d2), color-stop(#68d9c8), color-stop(#5ecfbf), color-stop(#54c6b5), to(#4abdac));
+  background-image: linear-gradient(to left bottom, #72e2d2, #68d9c8, #5ecfbf, #54c6b5, #4abdac);
+}
+
+main a, main a:hover, main a:visited, main a:focus {
+  text-decoration: none;
+}
+
+main #ab {
+  color: #008778;
+}
+
+main .active {
+  color: #008778;
+}
+/*# sourceMappingURL=style.css.map */
