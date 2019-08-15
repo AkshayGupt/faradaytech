@@ -15,7 +15,7 @@ class Dishdetail extends Component{
             <div>
                 
         <p>{comment.comment}</p>
-        <p>-- {comment.author} , {comment.date}</p>
+        <p>-- {comment.author} , {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
         </div>
         );
     }
@@ -25,6 +25,7 @@ class Dishdetail extends Component{
         if(dish!=null)
         {
         return(
+            <div className="container">
             <div className="row">
             <div className="col-12 col-md-5 m-1">
                     <Card>
@@ -41,6 +42,7 @@ class Dishdetail extends Component{
             <div className="col-12 col-md-5 ">
             <h4>Comments</h4>
                 {dish.comments.map((comment)=>this.displayComments(comment))}
+            </div>
             </div>
             </div>
         );
